@@ -133,13 +133,14 @@ div.portfolio {
     border-radius: 100%;
     border-style: solid;
     border-width: 3px;
-    border-color: #3a6899;
+    border-color: #3a68994a;
     cursor: pointer;
 }
 
 .portfolio_image:hover {
-    border-radius: 5%;
-
+    border-color: #3a6899;
+    border-width: 5px;
+    transition: linear 0.5s;
 }
 
 div.mailbox {
@@ -188,4 +189,8 @@ div.mailbox {
     height: 40px;
     width: 40px;
     margin: 0 -2.5px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
