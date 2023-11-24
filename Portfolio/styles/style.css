@@ -3,11 +3,11 @@
 @import url(responsive.css);
 
 a:link {
-    color: #faebd7
+    color: #ffffff;
 }
 
 a:visited {
-    color: #faebd7
+    color: #ffffff;
 }
 
 a:hover {
@@ -20,15 +20,15 @@ a:active {
 }
 
 body {
-    margin: 0;
-    background-color:  #faebd7;
+    margin: auto;
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
 }
 
-.header {
+header.header {
     background-color: #000000;
-    width: 100%;
+    width: 100vw;
     height: 70px;
     display: flex;
     align-items: center;
@@ -37,7 +37,6 @@ body {
 }
 
 .logo {
-    background-color: #00000000;
     font-size: 30px;
     padding-left: 20px;
     color:  #3a6899;
@@ -52,36 +51,35 @@ body {
     justify-items: center;
     align-items: center;
     gap: 10px;
-    color: #faebd7;
+    color: #ffffff;
     padding-right: 20px;
 }
 
 .home {
-    background: url(/Portfolio/image/big-sur-macbook-5k-b9.jpg);
+    background: url(../image/big-sur-macbook-5k-b9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    padding: 300px 0 0 20px;
 }
 
 h2 {
     font-size: 30px;
-    color: #faebd7;
-    margin: 0 0 0 20px;
-    padding-top: 300px;
+    color: #ffffff;
     animation: fadeIn 1s ease-in;
 }
 
 h1 {
     font-size: 60px;
-    color: #faebd7;
-    margin: 0 0 0 20px;
+    color: #ffffff;
     animation: fadeIn 3s ease-in;
 }
 
 .nameblock {
     font-size: 28px;
-    padding-top: 70px;
+    padding-top: 100px;
+    padding-bottom: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,13 +103,12 @@ div.project {
 }
 
 div.portfolio {
-    font-size: 24px;
-    padding: 0 100px;
-    margin-bottom: 70px;
-    gap: 20px;
+    font-size: 24px;    
+    padding: 0 100px 70px 100px;
     display: flex;
     flex-flow: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    justify-items: center;
     align-content: space-between;
 }
 
@@ -122,8 +119,8 @@ div.portfolio {
     justify-content: center;
     align-items: center;
     align-content: space-between;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
 }
 
 .portfolio_image {
@@ -143,17 +140,11 @@ div.portfolio {
     transition: linear 0.5s;
 }
 
-div.mailbox {
-    font-size: 70px;
-    display: flex;
-    justify-content: center;
-    margin: 70px 0;
-}
-
 .footer {
+    width: 100vw;
     font-size: 12px;
     background-color: #000000;
-    color: #faebd7;
+    color: #ffffff;
     height: 70px;
     display: flex;
     align-items: center;
@@ -188,7 +179,7 @@ div.mailbox {
 .contactimage:hover {
     height: 40px;
     width: 40px;
-    margin: 0 -2.5px;
+    margin: -2.5px;
 }
 
 html {
