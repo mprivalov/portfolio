@@ -21,7 +21,8 @@ a:active {
 
 body {
     margin: auto;
-    background-color: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
 }
@@ -177,9 +178,7 @@ div.portfolio {
 }
 
 .contactimage:hover {
-    height: 40px;
-    width: 40px;
-    margin: -2.5px;
+    transform: scale(1.2);
 }
 
 html {
