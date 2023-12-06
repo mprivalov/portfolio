@@ -24,11 +24,8 @@
     }
 
     .toolbar li {
+        font-size: small;
         text-align: center;
-    }
-
-    .toolbar li a {
-        padding: .5rem 1rem;
     }
 
     .toolbar.active {

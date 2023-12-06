@@ -1,6 +1,6 @@
-@import url(animation.css);
-@import url(normalize.css);
-@import url(responsive.css);
+@import url("animation.css");
+@import url("normalize.css");
+@import url("responsive.css");
 
 a:link {
     color: #ffffff;
@@ -40,7 +40,7 @@ body {
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 25px;
     color:  #3a6899;
     margin: 10px;
 }
