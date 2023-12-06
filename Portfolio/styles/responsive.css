@@ -1,27 +1,46 @@
 @media (max-width: 830px) {
     h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 50px;
     }
 
-    header.header {
-        height: 60px;
-    }
-
-    .logo {
-        font-size: 22px;
+    .navbar {
+        width: 100vw;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .toolbar {
-        font-size: 14px;
-        gap: 5px;
+        width: 100%;
+        display: none;
+    }
+
+    .toolbar ul {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .toolbar li {
+        text-align: center;
+    }
+
+    .toolbar li a {
+        padding: .5rem 1rem;
+    }
+
+    .toolbar.active {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: flex;
     }
     
     .footer {
-        height: 60px;
+        height: 50px;
         font-size: 8px;
     }
 
