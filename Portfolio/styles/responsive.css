@@ -1,12 +1,4 @@
 @media (max-width: 830px) {
-    h2 {
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-
     .navbar {
         width: 100vw;
         flex-direction: column;

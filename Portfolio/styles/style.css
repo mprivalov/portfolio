@@ -39,10 +39,10 @@ body {
     position: fixed;
 }
 
-.logo {
-    font-size: 25px;
+.navbar .logo {
+    margin: 1rem 0;
+    font-size: 1.5rem;
     color:  #3a6899;
-    margin: 10px;
 }
 
 .toolbar ul {
@@ -69,19 +69,20 @@ body {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 1.5rem;
     color: #ffffff;
     animation: fadeIn 1s ease-in;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.5rem;
     color: #ffffff;
     animation: fadeIn 3s ease-in;
 }
 
 .nameblock {
-    font-size: 28px;
+    font-size: 1.7rem;
+    width: 100vw;
     padding-top: 100px;
     padding-bottom: 70px;
     display: flex;
@@ -90,15 +91,17 @@ h1 {
 }
 
 div.about {
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: column;
+    gap: 20px;
 }
 
 div.project {
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
@@ -107,7 +110,7 @@ div.project {
 }
 
 div.portfolio {
-    font-size: 24px;    
+    font-size: 1.5rem;    
     padding: 0 100px 70px 100px;
     display: flex;
     flex-flow: wrap;
@@ -117,7 +120,7 @@ div.portfolio {
 }
 
 .portfolio_block {
-    font-size: 24px;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,18 +149,17 @@ div.portfolio {
 
 .footer {
     width: 100vw;
-    font-size: 12px;
+    font-size: 0.7rem;
     background-color: #000000;
     color: #ffffff;
-    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
     border-top: solid 0.1px #3a6899;
 }
 
 .copyright {
+    margin: 20px;
     display: flex;
     align-items: center;
 }

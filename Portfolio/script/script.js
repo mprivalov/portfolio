@@ -8,8 +8,8 @@ toggleButton.addEventListener('click',() => {
 const homeButton = document.querySelector('.home-button')
 
 window.addEventListener('scroll', () => {
-    if(this.scrollY > 200){
-        homeButton.style.display = 'flex';
+    if(window.scrollY > 700){
+        homeButton.style.display = 'block';
     } else {
         homeButton.style.display = 'none';
     }
