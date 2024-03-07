@@ -23,9 +23,9 @@
                             {{ __('Upload your image. Max - 2MB. JPEG, JPG, PNG, GIF.') }}
                         </p>
                         <div class="flex flex-row justify-between">
-                        <input type="file" id="image" name="image">
-                        <x-primary-button>{{ __('Post') }}</x-primary-button>
-                    </div>
+                            <input type="file" id="image" name="image">
+                            <x-primary-button>{{ __('Post') }}</x-primary-button>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -2,27 +2,27 @@
     <x-slot name="header">
         <div class="flex flex-row justify-between items-center">
             <div class="flex flex-row gap-5 items-center">
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ $user->name }}
-            </h2>
-            @if ($user->id !== Auth::user()->id)
-            <div>
-                @if ($user->alreadyFollowing())
-                <x-secondary-button>
-                    <a href="/follower/{{ $user->id }}">
-                            {{ __('Unfollow') }}
-                    </a>
-                        </x-secondary-button>
+                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                    {{ $user->name }}
+                </h2>
+                @if ($user->id !== Auth::user()->id)
+                    <div>
+                        @if ($user->alreadyFollowing())
+                            <x-secondary-button>
+                                <a href="/follower/{{ $user->id }}">
+                                    {{ __('Unfollow') }}
+                                </a>
+                            </x-secondary-button>
                         @else
-                        <x-primary-button>
-                            <a href="/follower/{{ $user->id }}">
-                            {{ __('Follow') }}
-                        </a>
-                    </x-primary-button>
-                    @endif
-                </div>
-            @endif
-        </div>
+                            <x-primary-button>
+                                <a href="/follower/{{ $user->id }}">
+                                    {{ __('Follow') }}
+                                </a>
+                            </x-primary-button>
+                        @endif
+                    </div>
+                @endif
+            </div>
             <div class="flex flex-row gap-2 text-gray-500 text-sm">
                 <h2>Followers: {{ $followersCount }}</h2>
                 <h2>Following: {{ $followingCount }}</h2>
@@ -82,33 +82,36 @@
                                 </div>
                             </button>
                             @if ($post->user_id === auth()->id())
-                            <x-dropdown align="right" width="48">
-                                <x-slot name="trigger">
-                                    <button
-                                        class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
-                                        <div class="ms-1">
-                                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                        </div>
-                                </x-slot>
+                                <x-dropdown align="right" width="48">
+                                    <x-slot name="trigger">
+                                        <button
+                                            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                                            <div class="ms-1">
+                                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </div>
+                                    </x-slot>
 
-                                <x-slot name="content">
-                                    <button class="block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-indigo-100 focus:outline-none focus:bg-indigo-100 transition duration-150 ease-in-out">
-                                    <a href="/posts/{{ $post->id }}/edit" class="flex">{{ __('Edit') }}</a></button>
+                                    <x-slot name="content">
+                                        <button
+                                            class="block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-indigo-100 focus:outline-none focus:bg-indigo-100 transition duration-150 ease-in-out">
+                                            <a href="/posts/{{ $post->id }}/edit"
+                                                class="flex">{{ __('Edit') }}</a></button>
 
-                                    <form action="{{ route('posts.destroy', $post->id) }}" method="POST">
-                                        @csrf
-                                        @method('DELETE')
+                                        <form action="{{ route('posts.destroy', $post->id) }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
 
-                                        <button type="submit" class="block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-indigo-100 focus:outline-none focus:bg-indigo-100 transition duration-150 ease-in-out">{{ __('Delete') }}</button>
-                                    </form>
-                                </x-slot>
-                            </x-dropdown>
-                        @endif
+                                            <button type="submit"
+                                                class="block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-indigo-100 focus:outline-none focus:bg-indigo-100 transition duration-150 ease-in-out">{{ __('Delete') }}</button>
+                                        </form>
+                                    </x-slot>
+                                </x-dropdown>
+                            @endif
                         </div>
                         <h1 class="font-semibold">{{ $post->title }}</h1>
                         <p class="p-1">{{ $post->body }}</p>

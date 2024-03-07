@@ -42,7 +42,7 @@ Route::middleware('guest')->group(function () {
 
 Route::middleware('auth')->group(function () {
 
-    Route::post('/posts/{post}/repost', [PostController::class,'repost'])->name('posts.repost');
+    Route::post('/posts/{post}/repost', [PostController::class, 'repost'])->name('posts.repost');
 
     Route::get('/follower/{id}', [FollowersController::class, 'follower']);
 

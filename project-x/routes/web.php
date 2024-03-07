@@ -31,7 +31,7 @@ Route::middleware('auth')->group(function () {
 
     // Route::get('/user/{id}/posts', [PostController::class,'showAccount'])->name('profile.posts');
     Route::get('/dashboard/filter', [PostController::class, 'filter'])->name('dashboard.filter');
-    Route::get('/follows/{id}', [FollowersController::class,'showFollowLists'])->name('profile.follows');
+    Route::get('/follows/{id}', [FollowersController::class, 'showFollowLists'])->name('profile.follows');
     Route::get('/my-posts', [ProfileController::class, 'allPosts'])->name('profile.my-posts');
     Route::get('/user/{id}/posts', [ProfileController::class, 'userPosts'])->name('profile.user-posts');
 });
