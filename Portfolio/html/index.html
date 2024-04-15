@@ -10,13 +10,26 @@
 
   <body>
     <nav class="navbar">
-      <div class="logo">MARKS PRIVALOVS</div>
-      <a href="#" class="toggle-button">
+      <a href="#main" class="logo">MARKS PRIVALOVS</a>
+      <div href="#" class="toggle-button">
+        <!-- <span class="bar"></span>
         <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-
-      </a>
+        <span class="bar"></span> -->
+        <a><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 18 18"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg></a>
+      </div>
       <div class="toolbar">
         <ul>
           <li>
@@ -42,12 +55,17 @@
     <main class="main">
       <section id="intro">
         <div class="home" id="main">
-          <h2>HELLO, I'M MARKS PRIVALOVS</h2>
-          <h1>
-            FUTURE WEB DEVELOPER
-            <br />
-            MADE IN LATVIA
-          </h1>
+          <div>
+            <h2>HELLO, I'M MARKS PRIVALOVS</h2>
+            <h1>
+              FUTURE WEB DEVELOPER
+              <br />
+              MADE IN LATVIA
+            </h1>
+          </div>
+          <!-- <div>
+            <img class="heroimage" src="../image/IMG_1939.jpg">
+          </div> -->
         </div>
       </section>
       <!-- home section end -->
@@ -93,9 +111,9 @@
         <div class="nameblock" id="project"><h3>PROJECT</h3></div>
         <div class="project">
           <ol>
-            <li>1. <a>LINK TO NOWHERE</a></li>
+            <li>1. <a>GitHub: Laravel Twitter Clone</a></li>
             <br />
-            <li>2. <a>LINK TO NOWHERE</a></li>
+            <li>2. <a>GitHub: Fotozona Baltic</a></li>
             <br />
             <li>3. <a>LINK TO NOWHERE</a></li>
             <br />
@@ -118,13 +136,13 @@
         <div class="nameblock" id="portfolio"><h3>MY PORTFOLIO</h3></div>
         <div class="portfolio">
           <div class="portfolio_block">
-            <img class="portfolio_image" src="../image/IMG_1540.JPG" /><a
-              >...</a
+            <img class="portfolio_image" src="../image/laravel-page.png" /><a
+              >Laravel Twitter Clone</a
             >
           </div>
           <div class="portfolio_block">
             <img class="portfolio_image" src="../image/IMG_1540.JPG" /><a
-              >...</a
+              >Fotozona Baltic</a
             >
           </div>
           <div class="portfolio_block">
@@ -159,7 +177,9 @@
           </div>
         </div>
       </section>
-      <a class="home-button" href="#main"><img src="../image/icons8-up-squared-50.png"></a>
+      <a class="home-button" href="#main"
+        ><img src="../image/icons8-up-squared-50.png"
+      /></a>
       <!-- portfolio section end -->
     </main>
 
