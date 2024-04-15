@@ -129,7 +129,7 @@ class PostController extends Controller
         $post->likes = 0;
         $post->user_id = $user->id;
         $post->save();
-        
+
         return redirect('/dashboard')->with('success', 'Post is created!');
     }
 
